@@ -1,1 +1,2 @@
-# -project3-_-HTML
+# project3_HTML
+#Simple calculator
