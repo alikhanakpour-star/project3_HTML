@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="lang" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <title>ماشین حساب</title>
+  <style>
+    body {
+
+      font-family: tahoma;
+      text-align: center;
+      background-color: darkgrey;
+      margin-top: 50pt;
+    }
+    input[type=text] {
+
+      width:150px;
+      margin:5px;
+      padding:10px;
+
+    }
+    input[type=button ] {
+
+      width: 150;
+      margin:5px;
+      padding:10px;
+
+      
+    }
+
+    body{border:2px;}
+
+  </style>
+</head>
+<body>
+
+  <div>
+         <input type="text" name="number1" id="number1" placeholder="عدد اول">
+  </div><div>
+         <input type="text" name="number2" id="number2" placeholder="عدد دوم">
+  </div><div>
+         <input type="text" id="answer" placeholder="نتیجه" readonly>
+  </div><div>
+
+      <input type="button" value="جمع" onclick="sum()" id="جمع" >
+                          
+      <input type="button" value="ضرب" onclick="multiply()" id="ضرب">
+
+      <input type="button" value="تقسیم" onclick="divide()" id="تقسیم">
+
+      <input type="button" value="تفریق" onclick="subtract()" id="تفریق">
+
+  </div>
+
+
+  <script>
+
+    function sum() {
+
+      var number1 = Number(document.getElementById("number1").value);
+      var number2 = Number(document.getElementById("number2").value);
+      var answer = number1 - number2;
+
+      document.getElementById("answer").value=number1+number2;
+
+    }
+
+    function multiply() {
+
+         var number1 = Number(document.getElementById("number1").value);
+         var number2 = Number(document.getElementById("number2").value);
+         var answer = number1 * number2;
+
+         document.getElementById("answer").value=number1*number2;
+    }
+
+    function divide() {
+        var number1 = Number(document.getElementById("number1").value);
+        var number2 = Number(document.getElementById("number2").value);
+        var answer = number1 / number2;
+
+        document.getElementById("answer").value=number1/number2;
+    }
+
+    function subtract() {
+
+        var number1 = Number(document.getElementById("number1").value);
+        var number2 = Number(document.getElementById("number2").value);
+        var answer = number1 - number2;
+
+        document.getElementById("answer").value=number1-number2;
+    }
+
+  </script>
+
+</body>
+</html>
